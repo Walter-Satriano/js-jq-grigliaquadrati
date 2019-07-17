@@ -1,10 +1,19 @@
+/*REGOLE GENERALI*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container_grid {
+[class*="square-"]{
+  width: calc(700px / 8);
+  height: calc(700px / 8);
+  border: 1px solid black;
+}
+
+
+/*REGOLE COMUNI*/
+#container_grid {
   width: 700px;
   height: 700px;
   margin: 10px auto;
@@ -13,8 +22,11 @@
   align-content: flex-start;
 }
 
-.square {
-  width: calc(700px / 8);
-  height: calc(700px / 8);
-  border: 1px solid black;
+
+.square_red {
+  background: red;
+}
+
+.square_green {
+  background: green;
 }
