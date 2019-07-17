@@ -6,19 +6,15 @@ se cliccati diventano rossi, gli altri diventano verdi*/
 
 $(document).ready(function(){
 
-
-  var redSquare = $(".square-1, .square-5, .square-12, .square-15, .square-19, .square-23, .square-28, .square-32, .square-36, .square-45, .square-52, .square-56, .square-59, .square-62, .square-64");
-
   // funzione per far diventare i quadrati scelti di colore rosso
-  redSquare.click(function() {
-    $(this).addClass("square_red");
+  // numeri quadrati rossi: 1 5 12 15 19 23 28 32 36 45 52 56 59 62 64
+  $(".square_red").click(function() {
+    $(this).addClass("red");
   });
 
-
-  // TO DO: cercare soluzione per i quadrati di colore verde
-  $(".square-2").click(function() {
-    $(this).addClass("square_green");
+  // funzione per far diventare gli altri quadrati di colore verde
+  $(".square_green").click(function() {
+    $(this).addClass("green");
   });
-
 
 });
