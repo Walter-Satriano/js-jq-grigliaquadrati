@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-[class*="square-"]{
-  width: calc(700px / 8);
-  height: calc(700px / 8);
-  border: 1px solid black;
-}
-
 
 /*REGOLE COMUNI*/
 #container_grid {
@@ -22,11 +16,16 @@
   align-content: flex-start;
 }
 
+#container_grid > div {
+  width: calc(700px / 8);
+  height: calc(700px / 8);
+  border: 1px solid black;
+}
 
-.square_red {
+.red {
   background: red;
 }
 
-.square_green {
+.green {
   background: green;
 }
